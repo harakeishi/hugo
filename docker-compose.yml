@@ -1,0 +1,9 @@
+version: '3'
+services:
+  hugo:
+    image: klakegg/hugo:0.82.1-ext-ubuntu-ci
+    volumes:
+      - ".:/src"
+    ports:
+        - "1313:1313"
+    working_dir: /src
